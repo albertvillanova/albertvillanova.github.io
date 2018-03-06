@@ -1,0 +1,103 @@
+{
+  "basics": {
+    "name": "Albert Villanova",
+    "label": "Data Scientist, Ph.D. Theoretical Particle Physics, M.Sc. Computer Science",
+    "website": "https://albertvillanova.github.io/",
+    "summary": "Data Scientist with a triple-skill profile (scientific, programming and managerial) who masters Data Science methods and technologies in Agile mode to extract value from Big Data and allow data-driven business decisions.",
+    "location": {
+      "city": "Paris",
+      "country": "France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "albertvillanova"
+      },
+      {
+        "network": "Twitter",
+        "username": "avillanovamoral"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Societe Generale Corporate and Investment Banking - SG CIB",
+      "position": "Data Science Consultant",
+      "startDate": "2016-10-17"
+    },
+    {
+      "company": "Open Groupe",
+      "position": "Data Scientist",
+      "startDate": "2016-04-01"
+    },
+    {
+      "company": "IKCOM",
+      "position": "Data Scientist",
+      "startDate": "2015-07-01",
+      "endDate": "2015-11-01"
+    },
+    {
+      "company": "IT CROUS Montpellier",
+      "position": "Engineering Assistant",
+      "startDate": "2014-05",
+      "endDate": "2014-10"
+    },
+    {
+      "company": "Université Montpellier 2",
+      "position": "Temporary Assistant for Research and Teaching",
+      "startDate": "2012-11",
+      "endDate": "2013-09"
+    },
+    {
+      "company": "CNRS",
+      "position": "Researcher",
+      "startDate": "2009-11",
+      "endDate": "2012-10"
+    },
+    {
+      "company": "Instituto Superior Técnico",
+      "position": "Researcher",
+      "startDate": "2007",
+      "endDate": "2009"
+    },
+    {
+      "company": "Spanish National Research Council (CSIC)",
+      "position": "Researcher",
+      "startDate": "2001-09",
+      "endDate": "2007-01"
+    },
+  ],
+  "education": [
+    {
+      "institution": "MIT Professional Education",
+      "area": "Data Science: Data to Insights",
+      "studyType": "Executive Certificate",
+      "startDate": "2017-01-02",
+      "endDate": "2017-01-29",
+      "url": "https://mitxpro.mit.edu/certificates/5adae7d98fbd4eb68103de1f60d3eccf"
+    },
+    {
+      "institution": "SUPINFO - The International Institute of Information Technology",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2014-11-01",
+      "endDate": "2015-10-31"
+    },
+    {
+      "institution": "University of Valencia",
+      "area": "Theoretical Particle Physics",
+      "studyType": "PhD",
+      "startDate": "2004-01-01",
+      "endDate": "2007-02-01",
+    },
+  ],
+  "certification": [
+    {
+      "name": "Specialization - Machine Learning (University of Washington)",
+      "authority": "Coursera",
+      "license_number": "Z25BM6674UTN",
+      "fromDate": "2017-02",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/Z25BM6674UTN"
+    }
+  ]
+}

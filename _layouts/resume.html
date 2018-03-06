@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ site.data.resume.basics.name }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ site.data.resume.basics.label }}
+  </div>
+
+
+  <ul>
+
+    <li><h2>Experience</h2></li>
+      <ul>
+      {% for work in site.data.resume.work %}
+        <li>{{ work.position }}
+          <ul>
+            <li>{{ work.company }}</li>
+            <li>From {{ work.startDate | date: "%Y-%m" }} to
+              {% if work.endDate %}{{ work.endDate | date: "%Y-%m" }}
+              {% else %}Present
+              {% endif %}
+            </li>
+          </ul>
+        </li>
+      {% endfor %}
+      </ul>
+
+    <li><h2>Education</h2></li>
+      <ul>
+      {% for education in site.data.resume.education %}
+        <li>{{ education.studyType }}, {{ education.area }}
+          <ul>
+            <li>{{ education.institution }}</li>
+            <li>{{ education.endDate }}</li>
+          </ul>
+        </li>
+      {% endfor %}
+      </ul>
+
+    <li><h2>Certifications</h2></li>
+      <ul>
+      {% for certification in site.data.resume.certification %}
+        <li>{{ certification.name }}
+          <ul>
+            <li>{{ certification.fromDate }}</li>
+            <li>Licence: {{ certification.license_number }}</li>
+            <li><a href="{{ certification.url }}">Certificate</a></li>
+          </ul>
+        </li>
+      {% endfor %}
+      </ul>
+
+
+  </ul>
+</article>
+
