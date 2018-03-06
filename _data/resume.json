@@ -93,11 +93,18 @@
   ],
   "certification": [
     {
+      "name": "Sequence Models (deeplearning.ai)",
+      "authority": "Coursera",
+      "license_number": "ETKHEXYDMXKB",
+      "fromDate": "2018-03",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/ETKHEXYDMXKB"
+    },
+    {
       "name": "Specialization - Machine Learning (University of Washington)",
       "authority": "Coursera",
       "license_number": "Z25BM6674UTN",
       "fromDate": "2017-02",
       "url": "https://www.coursera.org/account/accomplishments/specialization/Z25BM6674UTN"
-    }
+    },
   ]
 }
