@@ -93,6 +93,13 @@
   ],
   "certification": [
     {
+      "name": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (deeplearning.ai)",
+      "authority": "Coursera",
+      "license_number": "7GR2THPKD38W",
+      "fromDate": "2019-03",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7GR2THPKD38W"
+    },
+    {
       "name": "Sequence Models (deeplearning.ai)",
       "authority": "Coursera",
       "license_number": "ETKHEXYDMXKB",
