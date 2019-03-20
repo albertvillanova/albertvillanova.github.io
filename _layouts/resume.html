@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign experiences = site.data.resume.work %}
+{% assign educations = site.data.resume.education %}
 <article class="post">
 
   <header class="post-header">
@@ -12,50 +14,73 @@ layout: default
   </div>
 
 
-  <ul>
+  {% if experiences %}
+  <section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+    </span>Experience</h2>
+    <ul>
+    {% for work in experiences %}
+      <li>{{ work.position }}
+        <ul>
+          <li>{{ work.company }}</li>
+          <li>From {{ work.startDate | date: "%Y-%m" }} to
+            {% if work.endDate %}{{ work.endDate | date: "%Y-%m" }}
+            {% else %}Present
+            {% endif %}
+          </li>
+              {% if work.details %}
+    <div class="details">
+      {{ work.details | markdownify }}
+    </div><!--//details-->
+    {% endif %}
+        </ul>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
-    <li><h2>Experience</h2></li>
-      <ul>
-      {% for work in site.data.resume.work %}
-        <li>{{ work.position }}
-          <ul>
-            <li>{{ work.company }}</li>
-            <li>From {{ work.startDate | date: "%Y-%m" }} to
-              {% if work.endDate %}{{ work.endDate | date: "%Y-%m" }}
-              {% else %}Present
-              {% endif %}
-            </li>
-          </ul>
-        </li>
-      {% endfor %}
-      </ul>
+  {% if educations %}
+  <section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+    </span>Education</h2>
+    <ul>
+    {% for education in educations %}
+      <li>{{ education.studyType }}, {{ education.area }}
+        <ul>
+          <li>{{ education.institution }}</li>
+          <li>{{ education.endDate }}</li>
+        </ul>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
-    <li><h2>Education</h2></li>
-      <ul>
-      {% for education in site.data.resume.education %}
-        <li>{{ education.studyType }}, {{ education.area }}
-          <ul>
-            <li>{{ education.institution }}</li>
-            <li>{{ education.endDate }}</li>
-          </ul>
-        </li>
-      {% endfor %}
-      </ul>
+  <section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
+    </span>Certifications</h2>
+    <ul>
+    {% for certification in site.data.resume.certification %}
+      <li>{{ certification.name }}
+        <ul>
+          <li>{{ certification.fromDate }}</li>
+          <li>Licence: {{ certification.license_number }}</li>
+          <li><a href="{{ certification.url }}">Certificate</a></li>
+        </ul>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
 
-    <li><h2>Certifications</h2></li>
-      <ul>
-      {% for certification in site.data.resume.certification %}
-        <li>{{ certification.name }}
-          <ul>
-            <li>{{ certification.fromDate }}</li>
-            <li>Licence: {{ certification.license_number }}</li>
-            <li><a href="{{ certification.url }}">Certificate</a></li>
-          </ul>
-        </li>
-      {% endfor %}
-      </ul>
-
-
-  </ul>
 </article>
 
