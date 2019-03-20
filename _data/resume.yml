@@ -1,0 +1,98 @@
+basics:
+  name: "Albert Villanova"
+  label: "Data Scientist, Ph.D. Theoretical Particle Physics, M.Sc. Computer Science"
+  website: "https://albertvillanova.github.io/"
+  summary: "Data Scientist with a triple-skill profile (scientific, programming and managerial) who masters Data Science methods and technologies in Agile mode to extract value from Big Data and allow data-driven business decisions."
+  location:
+    city: "Paris"
+    country: "France"
+  profiles:
+    - network: "LinkedIn"
+      username: "albertvillanova"
+    - network: "Twitter"
+      username: "avillanovamoral"
+work:
+  - company: "Societe Generale Corporate and Investment Banking - SG CIB"
+    position: "Data Science Consultant"
+    startDate: "2016-10-17"
+    details: |
+      Data Analysis and Data Science on low latency trading
+
+      - Performance analysis of the electronic market making platform
+      - Statistical analysis of trading signals
+      - Python package as a common interface to all market data sources and transcodings
+  - company: "Open Groupe"
+    position: "Data Scientist"
+    startDate: "2016-04-01"
+    deatils: "- Agile Management of the Data Science team"
+  - company: "IKCOM"
+    position: "Data Scientist"
+    startDate: "2015-07-01"
+    endDate: "2015-11-01"
+    details: |
+      Data Mining and Text Analytics in Python:
+
+      - Creation of a Python package for text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization
+      - Creation of a web API web with Flask (Pyhton) to make accessible the text analysis functionalities via RESTful web services
+      - Creation of a Python package for lead generation by filtering texts to find purchase intentions
+
+  - company: "Université Montpellier 2"
+    position: "Temporary Assistant for Research and Teaching"
+    startDate: "2012-11"
+    endDate: "2013-09"
+    details: |
+      Research and Higher Education:
+      - Teaching at University of Montpellier 2 and at Polytech: Thermodynamics, Mechanics, Electromagnetism, PEIP Tutoring (total: TD 76,5h + TP 18h)
+
+  - company: "CNRS"
+    position: "Researcher"
+    startDate: "2009-11"
+    endDate: "2012-10"
+
+  - company: "Instituto Superior Técnico"
+    position: "Researcher"
+    startDate: "2007"
+    endDate: "2009"
+
+  - company: "Spanish National Research Council (CSIC)"
+    position: "Researcher"
+    startDate: "2001-09"
+    endDate: "2007-01"
+education:
+  - institution: "MIT Professional Education"
+    area: "Data Science: Data to Insights"
+    studyType: "Executive Certificate"
+    startDate: "2017-01-02"
+    endDate: "2017-01-29"
+    url: "https://mitxpro.mit.edu/certificates/5adae7d98fbd4eb68103de1f60d3eccf"
+
+  - institution: "SUPINFO - The International Institute of Information Technology"
+    area: "Computer Science"
+    studyType: "BSc"
+    startDate: "2014-11-01"
+    endDate: "2015-10-31"
+
+  - institution: "University of Valencia"
+    area: "Theoretical Particle Physics"
+    studyType: "PhD"
+    startDate: "2004-01-01"
+    endDate: "2007-02-01"
+
+certification:
+  - name: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (deeplearning.ai)"
+    authority: "Coursera"
+    license_number: "7GR2THPKD38W"
+    fromDate: "2019-03"
+    url: "https://www.coursera.org/account/accomplishments/verify/7GR2THPKD38W"
+
+  - name: "Sequence Models (deeplearning.ai)"
+    authority: "Coursera"
+    license_number: "ETKHEXYDMXKB"
+    fromDate: "2018-03"
+    url: "https://www.coursera.org/account/accomplishments/certificate/ETKHEXYDMXKB"
+
+  - name: "Specialization - Machine Learning (University of Washington)"
+    authority: "Coursera"
+    license_number: "Z25BM6674UTN"
+    fromDate: "2017-02"
+    url: "https://www.coursera.org/account/accomplishments/specialization/Z25BM6674UTN"

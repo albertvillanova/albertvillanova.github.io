@@ -23,30 +23,28 @@
     {
       "company": "Societe Generale Corporate and Investment Banking - SG CIB",
       "position": "Data Science Consultant",
-      "startDate": "2016-10-17"
+      "startDate": "2016-10-17",
+      "details": "Data Analysis and Data Science on low latency trading \n- Performance analysis of the electronic market making platform \n- Statistical analysis of trading signals \n- Python package as a common interface to all market data sources and transcodings"
     },
     {
       "company": "Open Groupe",
       "position": "Data Scientist",
-      "startDate": "2016-04-01"
+      "startDate": "2016-04-01",
+      "deatils": "- Agile Management of the Data Science team"
     },
     {
       "company": "IKCOM",
       "position": "Data Scientist",
       "startDate": "2015-07-01",
-      "endDate": "2015-11-01"
-    },
-    {
-      "company": "IT CROUS Montpellier",
-      "position": "Engineering Assistant",
-      "startDate": "2014-05",
-      "endDate": "2014-10"
+      "endDate": "2015-11-01",
+      "details": "Data Mining and Text Analytics in Python:\n- Creation of a Python package for text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization\n- Creation of a web API web with Flask (Pyhton) to make accessible the text analysis functionalities via RESTful web services\n- Creation of a Python package for lead generation by filtering texts to find purchase intentions"
     },
     {
       "company": "Université Montpellier 2",
       "position": "Temporary Assistant for Research and Teaching",
       "startDate": "2012-11",
-      "endDate": "2013-09"
+      "endDate": "2013-09",
+      "details": "Research and Higher Education: \n- Teaching at University of Montpellier 2 and at Polytech: Thermodynamics, Mechanics, Electromagnetism, PEIP Tutoring (total: TD 76,5h + TP 18h)"
     },
     {
       "company": "CNRS",
@@ -65,7 +63,7 @@
       "position": "Researcher",
       "startDate": "2001-09",
       "endDate": "2007-01"
-    },
+    }
   ],
   "education": [
     {
@@ -88,8 +86,8 @@
       "area": "Theoretical Particle Physics",
       "studyType": "PhD",
       "startDate": "2004-01-01",
-      "endDate": "2007-02-01",
-    },
+      "endDate": "2007-02-01"
+    }
   ],
   "certification": [
     {
@@ -112,6 +110,6 @@
       "license_number": "Z25BM6674UTN",
       "fromDate": "2017-02",
       "url": "https://www.coursera.org/account/accomplishments/specialization/Z25BM6674UTN"
-    },
+    }
   ]
 }
