@@ -18,23 +18,26 @@ work:
     details: |
       Data Analysis and Data Science on low latency trading
 
-      - Performance analysis of the electronic market making platform
+      - Analysis of the performance of the electronic market making network
       - Statistical analysis of trading signals
-      - Python package as a common interface to all market data sources and transcodings
+      - Pre-trading Python solution to handle all market data sources and transcoding referentials
   - company: "Open Groupe"
-    position: "Data Scientist"
+    position: "Data Scientist, Manager"
     startDate: "2016-04-01"
-    deatils: "- Agile Management of the Data Science team"
+    details: |
+      - Agile Management of the Data Science team (20 members, 6 projects)
+      - Big Data BI solution: market study
+      - Data Science for HR: CV text analysis
+
   - company: "IKCOM"
     position: "Data Scientist"
     startDate: "2015-07-01"
     endDate: "2015-11-01"
     details: |
-      Data Mining and Text Analytics in Python:
+      Text Analytics on social media:
 
-      - Creation of a Python package for text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization
+      - Text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization
       - Creation of a web API web with Flask (Pyhton) to make accessible the text analysis functionalities via RESTful web services
-      - Creation of a Python package for lead generation by filtering texts to find purchase intentions
 
   - company: "Université Montpellier 2"
     position: "Temporary Assistant for Research and Teaching"
@@ -49,12 +52,12 @@ work:
     startDate: "2009-11"
     endDate: "2012-10"
 
-  - company: "Instituto Superior Técnico"
+  - company: "Instituto Superior Técnico (IST), Lisbon"
     position: "Researcher"
     startDate: "2007"
     endDate: "2009"
 
-  - company: "Spanish National Research Council (CSIC)"
+  - company: "Spanish National Research Council (CSIC), València"
     position: "Researcher"
     startDate: "2001-09"
     endDate: "2007-01"
