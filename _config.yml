@@ -36,6 +36,11 @@ avatar: https://www.gravatar.com/avatar/aebfe2fac5032399a4c8be73b126d5e6
 # Build settings
 markdown: kramdown
 theme: minima
+#minima:
+header_pages:
+  - about.md
+  - cv.md
+  - blog.md
 
 #remote_theme: githubteacher/githubteacher.github.io  # not working
 #remote_theme: github/government.github.com  # not working
