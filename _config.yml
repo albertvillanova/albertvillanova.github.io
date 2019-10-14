@@ -39,7 +39,7 @@ theme: minima
 #minima:
 header_pages:
   - about.md
-  - resume.md
+  - CV.md
   - blog.md
 
 #remote_theme: githubteacher/githubteacher.github.io  # not working

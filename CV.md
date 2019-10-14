@@ -1,8 +1,8 @@
 ---
 layout: resume
-title: Resume
-permalink: /resume/
+title: CV
+permalink: /cv/
 header-img: "assets/img/index-bg.jpg"
 ---
 
-This is my Resume
+This is my CV
