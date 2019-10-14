@@ -12,15 +12,6 @@ basics:
     - network: "Twitter"
       username: "avillanovamoral"
 work:
-  - company: "Societe Generale Corporate and Investment Banking - SG CIB"
-    position: "Data Science Consultant"
-    startDate: "2016-10-17"
-    details: |
-      Data Analysis and Data Science on low latency trading
-
-      - Analysis of the performance of the electronic market making network
-      - Statistical analysis of trading signals
-      - Pre-trading Python solution to handle all market data sources and transcoding referentials
   - company: "Open Groupe"
     position: "Data Scientist, Manager"
     startDate: "2016-04-01"
@@ -28,6 +19,17 @@ work:
       - Agile Management of the Data Science team (20 members, 6 projects)
       - Big Data BI solution: market study
       - Data Science for HR: CV text analysis
+
+  - company: "Societe Generale Corporate and Investment Banking - SG CIB"
+    position: "Data Science Consultant"
+    startDate: "2016-10-17"
+    endDate: "2019-10-08"
+    details: |
+      Data Analysis and Data Science on low latency trading
+
+      - Analysis of the performance of the electronic market making network
+      - Statistical analysis of trading signals
+      - Pre-trading Python solution to handle all market data sources and transcoding referentials
 
   - company: "IKCOM"
     position: "Data Scientist"
