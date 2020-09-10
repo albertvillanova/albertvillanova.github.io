@@ -76,3 +76,6 @@ defaults:
      type: "posts"
    values:
      layout: "post"
+
+# Google analytics (minima)
+google_analytics: UA-177613528-1
