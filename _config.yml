@@ -24,11 +24,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: avillanovamoral
 github_username:  albertvillanova
-# TODO: do not work
 linkedin_username: albertvillanova
-googleplus_username: 106048896528627760512
-stack_overflow_username: 4274763
-avatar: https://www.gravatar.com/avatar/aebfe2fac5032399a4c8be73b126d5e6
+#googleplus_username: 106048896528627760512
+# TODO: do not work
+stackoverflow_username: "4274763"
+#avatar: https://www.gravatar.com/avatar/aebfe2fac5032399a4c8be73b126d5e6
 
 #social_media:
 
@@ -43,13 +43,13 @@ header_pages:
   - blog.md
 
 # minima theme settings
-minima:
-  # date_format: "%b %-d, %Y"
-  social_links:
-    twitter: avillanovamoral
-    github: albertvillanova
-    linkedin: albertvillanova
-    stackoverflow: "4274763"
+#minima:
+#  # date_format: "%b %-d, %Y"
+#  social_links:
+#    twitter: avillanovamoral
+#    github: albertvillanova
+#    linkedin: albertvillanova
+#    stackoverflow: "4274763"
 
 #remote_theme: githubteacher/githubteacher.github.io  # not working
 #remote_theme: github/government.github.com  # not working
