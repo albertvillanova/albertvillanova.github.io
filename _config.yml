@@ -42,6 +42,15 @@ header_pages:
   - CV.md
   - blog.md
 
+# minima theme settings
+minima:
+  # date_format: "%b %-d, %Y"
+  social_links:
+    twitter: avillanovamoral
+    github: albertvillanova
+    linkedin: albertvillanova
+    stackoverflow: "4274763"
+
 #remote_theme: githubteacher/githubteacher.github.io  # not working
 #remote_theme: github/government.github.com  # not working
 
