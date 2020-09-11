@@ -1,35 +1,44 @@
 basics:
-  name: "Albert Villanova"
-  label: "Data Scientist, Ph.D. Theoretical Particle Physics, M.Sc. Computer Science"
+  name: "Albert Villanova del Moral"
+  label: "Freelance Data Scientist, Founder & CEO at Aiinnova,<br/>PhD Theoretical Particle Physics, MSc Computer Science"
   website: "https://albertvillanova.github.io/"
   summary: "Data Scientist with a triple-skill profile (scientific, programming and managerial) who masters Data Science methods and technologies in Agile mode to extract value from Big Data and allow data-driven business decisions."
   location:
     city: "Paris"
     country: "France"
-  profiles:
-    - network: "LinkedIn"
-      username: "albertvillanova"
-    - network: "Twitter"
-      username: "avillanovamoral"
+#  profiles:
+#    - network: "LinkedIn"
+#      username: "albertvillanova"
+#    - network: "Twitter"
+#      username: "avillanovamoral"
 work:
+  - company: "Aiinnova"
+    position: "Founder & CEO"
+    startDate: "2020-07-08"
+    details: |
+      - Artificial Intelligence and Data Science consulting services
+
   - company: "Open Groupe"
     position: "Data Scientist, Manager"
     startDate: "2016-04-01"
+    endDate: "2020-07-07"
     details: |
-      - Agile Management of the Data Science team (20 members, 6 projects)
-      - Big Data BI solution: market study
-      - Data Science for HR: CV text analysis
+      - Agile Management of the Data Science team (20 members, 6 CIR/research projects)
+      - Industrial project for detecting falls from accelerometer and gyrometer data
+      - Big Data market analysis project using job data
+      - HR project for automatic extraction of main skills from CV text analysis
 
   - company: "Societe Generale Corporate and Investment Banking - SG CIB"
-    position: "Data Science Consultant"
+    position: "Data Scientist Consultant"
     startDate: "2016-10-17"
     endDate: "2019-10-08"
     details: |
       Data Analysis and Data Science on low latency trading
-
       - Analysis of the performance of the electronic market making network
+      - Supervision of master thesis: *"Latency Optimization: A Recurrent Neural Network Based Approach for High Frequency Time Series Prediction"*
       - Statistical analysis of trading signals
-      - Pre-trading Python solution to handle all market data sources and transcoding referentials
+      - Design, development, distribution and production of a Python package and a web service, to access various sources of market data and transcodings of financial instrument codes
+      - Development of a natural language processing (NLP) solution to generate trading signals
 
   - company: "IKCOM"
     position: "Data Scientist"
@@ -37,32 +46,56 @@ work:
     endDate: "2015-11-01"
     details: |
       Text Analytics on social media:
-
-      - Text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization
+      - Creation of a Python package for text analysis: topic clustering, sentiment analysis, language detection, spelling correction, lemmatization, tag cloud, summarization
       - Creation of a web API web with Flask (Pyhton) to make accessible the text analysis functionalities via RESTful web services
+      - Creation of a Python package for lead generation by filtering texts to find purchase intentions
 
   - company: "Université Montpellier 2"
-    position: "Temporary Assistant for Research and Teaching"
+    position: "Temporary Assistant for Research and Teaching (ATER)"
     startDate: "2012-11"
     endDate: "2013-09"
     details: |
-      Research and Higher Education:
+      Scientific research and higher education teaching:
       - Teaching at University of Montpellier 2 and at Polytech: Thermodynamics, Mechanics, Electromagnetism, PEIP Tutoring (total: TD 76,5h + TP 18h)
+      - Data analysis of neutrino experiments
+      - Development of phenomenological models to explain experimental data
+      - Creation of a Sagemath code for the calculation of radiative corrections to a neutrino mass loop
+      - Creation of Mathematica code to automate the graphical representation of the correlation between neutrino observables for the case of texture models
 
   - company: "CNRS"
     position: "Researcher"
     startDate: "2009-11"
     endDate: "2012-10"
+    details: |
+      Scientific Research: project, carried out in collaboration with LPSC (Grenoble), consisted in:
+      - Data analysis of neutrino experiments
+      - Development of phenomenological models to explain experimental data
+      - Generalizing the Fortran code of SuSpect (program of High Energy Physics)
+      - Transformation of the procedural code to the modular paradigm
+      - Generalization of scalar variables in vector and matrix variables
+      - Creation of an interface with Mathematica for automatic generation of renormalization group equations
 
   - company: "Instituto Superior Técnico (IST), Lisbon"
     position: "Researcher"
     startDate: "2007-02"
     endDate: "2009-10"
+    details: |
+      Scientific Research:
+      - Analysis of data from neutrino experiments
+      - Development of phenomenological models to explain experimental data
+      - Creation of a Mathematica program to read data files in SLHA2 format
+      - Creation of a Fortran interface to read and modify data files in SLHA2 format with a shell script
 
   - company: "Spanish National Research Council (CSIC), València"
     position: "Researcher"
     startDate: "2001-09"
     endDate: "2007-01"
+    details: |
+      Research and higher education teaching at Instituto de Física Corpuscular (IFIC), joint research center of the Spanish National Research Council (Consejo Superior de Investigaciones Científicas, CSIC) and University of Valencia.
+      - Teaching at University of Valencia: Quantum Physics
+      - Analysis of data from neutrino experiments
+      - Development of phenomenological models to explain experimental data
+
 education:
   - institution: "MIT Professional Education"
     area: "Data Science: Data to Insights"
@@ -70,36 +103,70 @@ education:
     startDate: "2017-01-02"
     endDate: "2017-01-29"
     url: "https://mitxpro.mit.edu/certificates/5adae7d98fbd4eb68103de1f60d3eccf"
+    details: "2.0 Continuing Education Units (CEUs)"
 
-  - institution: "SUPINFO - The International Institute of Information Technology"
+  - institution: "SUPINFO International University"
     area: "Computer Science"
     studyType: "BSc"
     startDate: "2014-11-01"
     endDate: "2015-10-31"
+    details: |
+      - Artificial Intelligence: Functional programming, Expert system, Lisp, Python
+      - Development: Java SE and EE, ASP.NET MVC, JavaScript, Node.js, Express, AngularJS, Android, Windows Phone, iOS
+      - Databases: Oracle 10g, Microsoft SQL Server, MySQL, MongoDB
+      - Linux Data Center
+      - ITIL
 
   - institution: "University of Valencia"
     area: "Theoretical Particle Physics"
     studyType: "PhD"
     startDate: "2004-01-01"
     endDate: "2007-02-01"
+    details: |
+      Thesis: *"Phenomenology of Neutrino Mass Models"* (2007)
 
 certification:
+  - name: AI for Medicine Specialization
+    authority: Coursera
+    license_number: XCHBUY4S74WW
+    fromDate: "2020-08"
+    url: https://www.coursera.org/account/accomplishments/specialization/certificate/XCHBUY4S74WW
+
+  - name: Deep Reinforcement Learning Nanodegree
+    authority: Udacity
+    license_number: 49HA7MG
+    fromDate: "2020-05"
+    url: https://confirm.udacity.com/49HA7MG
+
+  - name: Deep Learning Nanodegree
+    authority: Udacity
+    license_number: RGF3PK9C
+    fromDate: "2020-05"
+    url: https://confirm.udacity.com/RGF3PK9C
+
+  - name: DeepLearning.AI TensorFlow Developer Professional Certificate
+    authority: Coursera
+    license_number: T5TH69N3FK79
+    fromDate: "2020-04"
+    url: https://www.coursera.org/account/accomplishments/specialization/certificate/T5TH69N3FK79
+
   - name: Fundamentals of Machine Learning in Finance (New York University Tandon School of Engineering)
     authority: Coursera
     license_number: HMYAJRRX9RSW
     fromDate: "2019-03"
     url: https://www.coursera.org/account/accomplishments/verify/HMYAJRRX9RSW
+
   - name: Guided Tour of Machine Learning in Finance (New York University Tandon School of Engineering)
     authority: Coursera
     license_number: 67BJA3PT288E
     fromDate: "2019-03"
     url: https://www.coursera.org/account/accomplishments/verify/67BJA3PT288E
 
-  - name: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (deeplearning.ai)"
-    authority: "Coursera"
-    license_number: "7GR2THPKD38W"
-    fromDate: "2019-03"
-    url: "https://www.coursera.org/account/accomplishments/verify/7GR2THPKD38W"
+#  - name: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (deeplearning.ai)"
+#    authority: "Coursera"
+#    license_number: "7GR2THPKD38W"
+#    fromDate: "2019-03"
+#    url: "https://www.coursera.org/account/accomplishments/verify/7GR2THPKD38W"
 
   - name: "Sequence Models (deeplearning.ai)"
     authority: "Coursera"

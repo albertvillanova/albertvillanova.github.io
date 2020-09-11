@@ -5,4 +5,4 @@ permalink: /cv/
 header-img: "assets/img/index-bg.jpg"
 ---
 
-This is my CV
+CV content from _data/resume.yml
