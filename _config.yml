@@ -13,30 +13,29 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Albert Villanova del Moral
-email: albert.villanova@example.com
+#email: albert.villanova@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Artificial Intelligence, Machine Learning and Data Science consultant.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: avillanovamoral
 github_username:  albertvillanova
 linkedin_username: albertvillanova
-#googleplus_username: 106048896528627760512
 # TODO: do not work
 stackoverflow_username: "4274763"
 #avatar: https://www.gravatar.com/avatar/aebfe2fac5032399a4c8be73b126d5e6
 
-#social_media:
-
-
 # Build settings
-markdown: kramdown
 theme: minima
-#minima:
+plugins:
+  - jekyll-feed
+
+# Conversion
+#markdown: kramdown  # this is the default?
+
 header_pages:
   - about.md
   - CV.md
@@ -62,13 +61,19 @@ header_pages:
 
 
 
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
 # exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
