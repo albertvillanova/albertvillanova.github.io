@@ -59,6 +59,11 @@ layout: default
         <ul>
           <li>{{ education.institution }}</li>
           <li>{{ education.endDate }}</li>
+          {% if education.details %}
+          <div class="details">
+            {{ education.details | markdownify }}
+          </div><!--//details-->
+          {% endif %}
         </ul>
       </li>
     {% endfor %}
@@ -77,8 +82,9 @@ layout: default
       <li>{{ certification.name }}
         <ul>
           <li>{{ certification.fromDate }}</li>
-          <li>Licence: {{ certification.license_number }}</li>
-          <li><a href="{{ certification.url }}">Certificate</a></li>
+<!--          <li>Licence: {{ certification.license_number }}</li>-->
+<!--          <li><a href="{{ certification.url }}">Certificate</a></li>-->
+          <li>Certificate: <a href="{{ certification.url }}">{{ certification.license_number }}</a></li>
         </ul>
       </li>
     {% endfor %}
