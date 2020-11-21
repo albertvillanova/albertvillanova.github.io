@@ -44,7 +44,7 @@ baseurl: "" # the subpath of your site, e.g. "/blog".
 
 # Customize default permalink:
 # permalink: /:categories/:year/:month/:day/:title:output_ext
-permalink: /blog/:categories/:year/:month/:day/:title:output_ext
+# permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 
 # Theme Minima: https://github.com/jekyll/minima
 minima:
