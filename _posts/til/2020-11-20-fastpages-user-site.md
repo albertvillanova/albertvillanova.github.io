@@ -1,5 +1,5 @@
 ---
-title:  "User/Organization GitHub Pages sites using fastpages"
+title:  "User/Organization site in GitHub Pages using fastpages"
 description: "Added support for creating user/organization sites in GitHub Pages using fastpages"
 category: til
 tags: fastpages github-pages
