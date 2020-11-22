@@ -54,7 +54,7 @@ defaults:
     values:
       layout: "post"
 
-  # Theme Minima: https://github.com/jekyll/minima
+# Theme Minima: https://github.com/jekyll/minima
 minima:
   date_format: "%Y-%m-%d"  # "%b %-d, %Y"  # default
   social_links:
@@ -67,6 +67,15 @@ minima:
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
     # youtube_channel_name: CloudCannon
+
+# Minima: sort pages in navigation header
+header_pages:
+  - about.md
+  - cv.md
+  - blog.md
+  - til.md
+  - tags.html
+  - search.html
 
 # Set this to true to get LaTeX math equation support
 use_math:
