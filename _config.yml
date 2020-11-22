@@ -46,7 +46,15 @@ baseurl: "" # the subpath of your site, e.g. "/blog".
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 # permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 
-# Theme Minima: https://github.com/jekyll/minima
+# Customize front matter defaults: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+  # Theme Minima: https://github.com/jekyll/minima
 minima:
   date_format: "%Y-%m-%d"  # "%b %-d, %Y"  # default
   social_links:
