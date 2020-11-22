@@ -56,7 +56,7 @@ defaults:
 
 # Theme Minima: https://github.com/jekyll/minima
 minima:
-  date_format: "%Y-%m-%d"  # "%b %-d, %Y"  # default
+  date_format: "%-d %B %Y" #  "%Y-%m-%d"  # "%b %-d, %Y"  # default
   social_links:
     twitter: avillanovamoral
     github: albertvillanova
