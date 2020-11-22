@@ -3,9 +3,10 @@ layout: default
 ---
 
 <article class="post">
-  {%- if page.title -%}
+  {%- assign title = page.content_title | default: page.title -%}
+  {%- if title -%}
     <header class="post-header">
-      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <h1 class="post-title">{{ title | escape }}</h1>
     </header>
   {%- endif -%}
 
