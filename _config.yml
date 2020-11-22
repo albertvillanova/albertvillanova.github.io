@@ -70,12 +70,12 @@ minima:
 
 # Minima: sort pages in navigation header
 header_pages:
-  - about.md
-  - cv.md
-  - blog.md
-  - til.md
-  - tags.html
-  - search.html
+  - _pages/about.md
+  - _pages/cv.md
+  - _pages/blog.md
+  - _pages/til.md
+  - _pages/tags.html
+  - _pages/search.html
 
 # Set this to true to get LaTeX math equation support
 use_math:
