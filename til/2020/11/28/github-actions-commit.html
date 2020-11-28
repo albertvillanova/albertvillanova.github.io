@@ -4,19 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Albert Villanova del Moral | Artificial Intelligence, Machine Learning and Data Science consultant.</title>
+<title>GitHub Actions: commit and push | Albert Villanova del Moral</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Albert Villanova del Moral" />
+<meta property="og:title" content="GitHub Actions: commit and push" />
 <meta name="author" content="Albert Villanova del Moral" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Artificial Intelligence, Machine Learning and Data Science consultant." />
-<meta property="og:description" content="Artificial Intelligence, Machine Learning and Data Science consultant." />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<meta name="description" content="How to commit and push from GitHub Actions" />
+<meta property="og:description" content="How to commit and push from GitHub Actions" />
+<link rel="canonical" href="/til/2020/11/28/github-actions-commit.html" />
+<meta property="og:url" content="/til/2020/11/28/github-actions-commit.html" />
 <meta property="og:site_name" content="Albert Villanova del Moral" />
-<meta property="og:image" content="/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-28T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Artificial Intelligence, Machine Learning and Data Science consultant.","url":"/","@type":"WebSite","headline":"Albert Villanova del Moral","author":{"@type":"Person","name":"Albert Villanova del Moral"},"image":"/images/logo.png","name":"Albert Villanova del Moral","@context":"https://schema.org"}</script>
+{"description":"How to commit and push from GitHub Actions","url":"/til/2020/11/28/github-actions-commit.html","@type":"BlogPosting","headline":"GitHub Actions: commit and push","dateModified":"2020-11-28T00:00:00-06:00","datePublished":"2020-11-28T00:00:00-06:00","author":{"@type":"Person","name":"Albert Villanova del Moral"},"mainEntityOfPage":{"@type":"WebPage","@id":"/til/2020/11/28/github-actions-commit.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Albert Villanova del Moral" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -74,72 +75,53 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p><img src="/images/diagram.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">GitHub Actions: commit and push</h1><p class="page-description">How to commit and push from GitHub Actions</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-11-28T00:00:00-06:00" itemprop="datePublished">
+        28 November 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/tags/#github-actions">github-actions</a>
+        
+      
+      </p>
+    
 
-<p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
+    </header>
 
-<h1 id="posts">Posts</h1>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It is possible to commit and push to origin from GitHub Actions:</p>
 
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Push commit</span>
+<span class="na">on</span><span class="pi">:</span> <span class="s">push</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">report</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Create report file</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">date + %s &gt; report.txt</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Commit and push report</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">git config --global user.name 'Your name'</span>
+          <span class="s">git config --global user.email 'your-username@users.noreply.github.com'</span>
+          <span class="s">git commit -am "Automated report"</span>
+          <span class="s">git push</span>
+</code></pre></div></div>
 
+  </div><a class="u-url" href="/til/2020/11/28/github-actions-commit.html" hidden></a>
+</article>
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/til/2020/11/28/github-actions-commit.html">
-    GitHub Actions: commit and push
-    </a>
-</h3><p class="post-meta-description">How to commit and push from GitHub Actions</p><p class="post-meta">28 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/26/huggingface-signup.html">
-    Joining the Hugging Face Community
-    </a>
-</h3><p class="post-meta-description">Signing up to Hugging Face</p><p class="post-meta">26 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/24/colab-vscode.html">
-    Using VS Code on Google Colab
-    </a>
-</h3><p class="post-meta-description">How to launch a VS Code server on Gooogle Colab using pyngrok</p><p class="post-meta">24 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/20/fastpages-user-site.html">
-    User/Organization sites in GitHub Pages using fastpages
-    </a>
-</h3><p class="post-meta-description">Added support for creating user/organization sites in GitHub Pages using fastpages</p><p class="post-meta">20 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/11/17/pytorch-lightning-transfer-learning.html">
-    Transfer Learning from Supervised and Self-Supervised Pretraining using PyTorch Lightning
-    </a>
-</h3><p class="post-meta">17 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">20 February 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">14 January 2020</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
