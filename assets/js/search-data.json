@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "GitHub Actions: commit and push",
-            "content": "It is possible to commit and push to origin from GitHub Actions: . name: Push commit on: push jobs: report: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - name: Create report file run: date + %s &gt; report.txt - name: Commit and push report run: | git config --global user.name &#39;Your name&#39; git config --global user.email &#39;your-username@users.noreply.github.com&#39; git commit -am &quot;Automated report&quot; git push .",
+            "title": "Commit and Push using GitHub Actions",
+            "content": "It is possible to commit and push using GitHub Actions: . name: Commit and push on: push jobs: report: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - name: Create report file run: date &gt; report.txt - name: Commit and push report run: | git config user.name github-actions git config user.email github-actions@github.com git add . git commit -m &quot;Generate automated report&quot; git push .",
             "url": "/til/2020/11/28/github-actions-commit.html",
             "relUrl": "/til/2020/11/28/github-actions-commit.html",
             "date": " • 28 November 2020"
