@@ -126,6 +126,12 @@ education:
       Thesis: *"Phenomenology of Neutrino Mass Models"* (2007)
 
 certification:
+  - name: Generative Adversarial Networks (GANs) Specialization
+    authority: Coursera
+    license_number: C87TB7UAK7QR
+    fromDate: "2021-01"
+    url: https://www.coursera.org/account/accomplishments/specialization/certificate/C87TB7UAK7QR
+
   - name: AI for Medicine Specialization
     authority: Coursera
     license_number: XCHBUY4S74WW
