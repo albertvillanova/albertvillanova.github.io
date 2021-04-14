@@ -105,7 +105,27 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p>To pull a GitHub Pull Request <code class="language-plaintext highlighter-rouge">pull/{ID}</code> into a local branch named <code class="language-plaintext highlighter-rouge">pr/{ID}</code>:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch upstream pull/<span class="o">{</span>ID<span class="o">}</span>/head:pr/<span class="o">{</span>ID<span class="o">}</span>
+<ul>
+  <li><a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally">Fetch the reference to the pull request</a> 
+based on its ID number, creating a new local branch:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch upstream pull/<span class="o">{</span>ID<span class="o">}</span>/head:pr/<span class="o">{</span>ID<span class="o">}</span>
+git checkout <span class="nb">pr</span>/<span class="o">{</span>ID<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Pull:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nb">pr</span>/<span class="o">{</span>ID<span class="o">}</span>
+git pull upstream pull/<span class="o">{</span>ID<span class="o">}</span>/head
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Note:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch upstream pull/2178/head
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * branch              refs/pull/2178/head -&gt; FETCH_HEAD
 </code></pre></div></div>
 
   </div><a class="u-url" href="/til/2021/03/23/pull-pull-request.html" hidden></a>

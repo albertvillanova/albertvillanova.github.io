@@ -4,19 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Albert Villanova del Moral | Artificial Intelligence, Machine Learning and Data Science consultant.</title>
+<title>Git: Revert to a previous commit | Albert Villanova del Moral</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Albert Villanova del Moral" />
+<meta property="og:title" content="Git: Revert to a previous commit" />
 <meta name="author" content="Albert Villanova del Moral" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Artificial Intelligence, Machine Learning and Data Science consultant." />
-<meta property="og:description" content="Artificial Intelligence, Machine Learning and Data Science consultant." />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<meta name="description" content="How to revert to a previous commit in history at once" />
+<meta property="og:description" content="How to revert to a previous commit in history at once" />
+<link rel="canonical" href="/til/2021/04/14/git-revert-to-commit.html" />
+<meta property="og:url" content="/til/2021/04/14/git-revert-to-commit.html" />
 <meta property="og:site_name" content="Albert Villanova del Moral" />
-<meta property="og:image" content="/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-14T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Artificial Intelligence, Machine Learning and Data Science consultant.","url":"/","@type":"WebSite","headline":"Albert Villanova del Moral","author":{"@type":"Person","name":"Albert Villanova del Moral"},"image":"/images/logo.png","name":"Albert Villanova del Moral","@context":"https://schema.org"}</script>
+{"description":"How to revert to a previous commit in history at once","url":"/til/2021/04/14/git-revert-to-commit.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/til/2021/04/14/git-revert-to-commit.html"},"headline":"Git: Revert to a previous commit","dateModified":"2021-04-14T00:00:00-05:00","datePublished":"2021-04-14T00:00:00-05:00","author":{"@type":"Person","name":"Albert Villanova del Moral"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Albert Villanova del Moral" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -74,87 +75,46 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p><img src="/images/diagram.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Git: Revert to a previous commit</h1><p class="page-description">How to revert to a previous commit in history at once</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-14T00:00:00-05:00" itemprop="datePublished">
+        14 April 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/tags/#git">git</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/tags/#github">github</a>
+        
+      
+      </p>
+    
 
-<p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
+    </header>
 
-<h1 id="posts">Posts</h1>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Note that this is like <code class="language-plaintext highlighter-rouge">reset</code> but for public branches.</p>
 
+<p>In order revert to a previous commit in history <code class="language-plaintext highlighter-rouge">803cda1</code>:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-f</span> 803cda1 <span class="nt">--</span> <span class="nb">.</span>
+</code></pre></div></div>
+<p>Reset from HEAD the changes you do not want to revert. Commit:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Revert changes to commit 803cda1"</span>
+</code></pre></div></div>
 
+  </div><a class="u-url" href="/til/2021/04/14/git-revert-to-commit.html" hidden></a>
+</article>
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/til/2021/04/14/git-revert-to-commit.html">
-    Git: Revert to a previous commit
-    </a>
-</h3><p class="post-meta-description">How to revert to a previous commit in history at once</p><p class="post-meta">14 April 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2021/03/23/pull-pull-request.html">
-    Git: Pull a GitHub Pull Request
-    </a>
-</h3><p class="post-meta-description">How to pull locally a GitHub Pull Request</p><p class="post-meta">23 March 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2021/02/18/git-reset-commit-date.html">
-    Git: reset commit date
-    </a>
-</h3><p class="post-meta-description">Reset local commit author/committer dates</p><p class="post-meta">18 February 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/28/github-actions-commit.html">
-    Commit and Push using GitHub Actions
-    </a>
-</h3><p class="post-meta-description">How to commit and push using GitHub Actions</p><p class="post-meta">28 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/26/huggingface-signup.html">
-    Joining the Hugging Face Community
-    </a>
-</h3><p class="post-meta-description">Signing up to Hugging Face</p><p class="post-meta">26 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/24/colab-vscode.html">
-    Using VS Code on Google Colab
-    </a>
-</h3><p class="post-meta-description">How to launch a VS Code server on Gooogle Colab using pyngrok</p><p class="post-meta">24 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/til/2020/11/20/fastpages-user-site.html">
-    User/Organization sites in GitHub Pages using fastpages
-    </a>
-</h3><p class="post-meta-description">Added support for creating user/organization sites in GitHub Pages using fastpages</p><p class="post-meta">20 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/11/17/pytorch-lightning-transfer-learning.html">
-    Transfer Learning from Supervised and Self-Supervised Pretraining using PyTorch Lightning
-    </a>
-</h3><p class="post-meta">17 November 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">20 February 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">14 January 2020</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
