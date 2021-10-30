@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-30T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Python Standard Library SQL interface","url":"/til/2021/10/30/sqlite3.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/til/2021/10/30/sqlite3.html"},"headline":"sqlite3: SQLite in Python","dateModified":"2021-10-30T00:00:00-05:00","datePublished":"2021-10-30T00:00:00-05:00","author":{"@type":"Person","name":"Albert Villanova del Moral"},"@context":"https://schema.org"}</script>
+{"datePublished":"2021-10-30T00:00:00-05:00","url":"/til/2021/10/30/sqlite3.html","@type":"BlogPosting","headline":"sqlite3: SQLite in Python","dateModified":"2021-10-30T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/til/2021/10/30/sqlite3.html"},"author":{"@type":"Person","name":"Albert Villanova del Moral"},"description":"Python Standard Library SQL interface","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Albert Villanova del Moral" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -106,20 +106,20 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>The Python Standard Library contains a module that provides a SQL interface with the DB-API 2.0 specification: 
+    <p>The Python Standard Library contains a module that provides an SQL interface with the DB-API 2.0 specification: 
 <code class="language-plaintext highlighter-rouge">sqlite3</code>. It requires SQLite 3.7.15 or newer.</p>
 
-<p>First import the <code class="language-plaintext highlighter-rouge">sqlite3</code> module:</p>
+<p>First, import the <code class="language-plaintext highlighter-rouge">sqlite3</code> module:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sqlite3</span>
 </code></pre></div></div>
 
-<p>Then connect to the SQLite database file and create a cursor:</p>
+<p>Then, connect to the SQLite database file and create a cursor:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">db</span> <span class="o">=</span> <span class="s">"example.db"</span>
 <span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
 <span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="p">.</span><span class="n">cursor</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p>To get the list of tables:</p>
+<p>To get the list of all the tables in the database:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tables</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="s">"SELECT name FROM sqlite_schema WHERE type='table'"</span><span class="p">).</span><span class="n">fetchall</span><span class="p">()</span>
 </code></pre></div></div>
 
@@ -142,10 +142,10 @@ window.onload = wrap_img;
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cur</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="s">f"SELECT * FROM </span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s">"</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
 </code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{'date': '2006-01-05', 'trans': 'BUY', 'symbol': 'RHAT', 'qty': 100.0, 'price': 35.14}
-{'date': '2006-03-28', 'trans': 'BUY', 'symbol': 'IBM', 'qty': 1000.0, 'price': 45.0}
-{'date': '2006-04-06', 'trans': 'SELL', 'symbol': 'IBM', 'qty': 500.0, 'price': 53.0}
-{'date': '2006-04-05', 'trans': 'BUY', 'symbol': 'MSFT', 'qty': 1000.0, 'price': 72.0}
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'date'</span><span class="p">:</span> <span class="s">'2006-01-05'</span><span class="p">,</span> <span class="s">'trans'</span><span class="p">:</span> <span class="s">'BUY'</span><span class="p">,</span> <span class="s">'symbol'</span><span class="p">:</span> <span class="s">'RHAT'</span><span class="p">,</span> <span class="s">'qty'</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span> <span class="s">'price'</span><span class="p">:</span> <span class="mf">35.14</span><span class="p">}</span>
+<span class="p">{</span><span class="s">'date'</span><span class="p">:</span> <span class="s">'2006-03-28'</span><span class="p">,</span> <span class="s">'trans'</span><span class="p">:</span> <span class="s">'BUY'</span><span class="p">,</span> <span class="s">'symbol'</span><span class="p">:</span> <span class="s">'IBM'</span><span class="p">,</span> <span class="s">'qty'</span><span class="p">:</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="s">'price'</span><span class="p">:</span> <span class="mf">45.0</span><span class="p">}</span>
+<span class="p">{</span><span class="s">'date'</span><span class="p">:</span> <span class="s">'2006-04-06'</span><span class="p">,</span> <span class="s">'trans'</span><span class="p">:</span> <span class="s">'SELL'</span><span class="p">,</span> <span class="s">'symbol'</span><span class="p">:</span> <span class="s">'IBM'</span><span class="p">,</span> <span class="s">'qty'</span><span class="p">:</span> <span class="mf">500.0</span><span class="p">,</span> <span class="s">'price'</span><span class="p">:</span> <span class="mf">53.0</span><span class="p">}</span>
+<span class="p">{</span><span class="s">'date'</span><span class="p">:</span> <span class="s">'2006-04-05'</span><span class="p">,</span> <span class="s">'trans'</span><span class="p">:</span> <span class="s">'BUY'</span><span class="p">,</span> <span class="s">'symbol'</span><span class="p">:</span> <span class="s">'MSFT'</span><span class="p">,</span> <span class="s">'qty'</span><span class="p">:</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="s">'price'</span><span class="p">:</span> <span class="mf">72.0</span><span class="p">}</span>
 </code></pre></div></div>
 
 <p>At the end, close the connection:</p>
