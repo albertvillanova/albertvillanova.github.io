@@ -1,6 +1,6 @@
 basics:
   name: "Albert Villanova del Moral"
-  label: "Freelance Data Scientist, Founder & CEO at Aiinnova,<br/>PhD Theoretical Particle Physics, MSc Computer Science"
+  label: "Machine Learning Engineer at Hugging Face, Freelance Data Scientist, Founder & CEO at Aiinnova,<br/>PhD Theoretical Particle Physics, MSc Computer Science"
   website: "https://albertvillanova.github.io/"
   summary: "Data Scientist with a triple-skill profile (scientific, programming and managerial) who masters Data Science methods and technologies in Agile mode to extract value from Big Data and allow data-driven business decisions."
   location:
@@ -12,6 +12,13 @@ basics:
 #    - network: "Twitter"
 #      username: "avillanovamoral"
 work:
+  - company: "Hugging Face"
+    position: "Machine Learning Engineer"
+    startDate: "2021-04-06"
+    details: |
+      - Maintainer of Datasets library
+      - Co-chair of Data Tooling working group in BigScience project
+
   - company: "Aiinnova"
     position: "Founder & CEO"
     startDate: "2020-07-08"
