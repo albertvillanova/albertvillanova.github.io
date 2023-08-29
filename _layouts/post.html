@@ -34,10 +34,10 @@ layout: default
        • {% include reading_time.html -%}
     </p>
 
-    {% if page.tags.size > 0 and site.show_tags %}
+    {% if page.categories.size > 0 and site.show_tags %}
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      {% for tag in  page.tags  %}
-        <a class="category-tags-link" href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+      {% for category in  page.categories  %}
+        <a class="category-tags-link" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
       </p>
@@ -45,10 +45,11 @@ layout: default
 
     {% if page.layout == 'notebook' %}
       {% if page.badges or page.badges == nil %}
-        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+        <div class="pb-5 d-flex flex-justify-center">
           {% unless page.hide_github_badge or site.default_badges.github != true %}{% include notebook_github_link.html %}{% endunless %}
           {% unless page.hide_binder_badge or site.default_badges.binder != true  %}{% include notebook_binder_link.html %}{% endunless %}
           {% unless page.hide_colab_badge or site.default_badges.colab != true %}{% include notebook_colab_link.html %}{% endunless %}
+          {% unless page.hide_deepnote_badge or site.default_badges.deepnote != true %}{% include notebook_deepnote_link.html %}{% endunless %}
         </div>
       {% endif -%}
     {% endif -%}
