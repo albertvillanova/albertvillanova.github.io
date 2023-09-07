@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>sqlite3: SQLite in Python | Albert Villanova del Moral</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="sqlite3: SQLite in Python" />
@@ -16,8 +16,10 @@
 <meta property="og:site_name" content="Albert Villanova del Moral" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="sqlite3: SQLite in Python" />
 <script type="application/ld+json">
-{"url":"/til/2021/10/30/sqlite3.html","@type":"BlogPosting","headline":"sqlite3: SQLite in Python","dateModified":"2021-10-30T00:00:00-05:00","datePublished":"2021-10-30T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/til/2021/10/30/sqlite3.html"},"author":{"@type":"Person","name":"Albert Villanova del Moral"},"description":"Python Standard Library SQL interface","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Albert Villanova del Moral"},"dateModified":"2021-10-30T00:00:00-05:00","datePublished":"2021-10-30T00:00:00-05:00","description":"Python Standard Library SQL interface","headline":"sqlite3: SQLite in Python","mainEntityOfPage":{"@type":"WebPage","@id":"/til/2021/10/30/sqlite3.html"},"url":"/til/2021/10/30/sqlite3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Albert Villanova del Moral" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -136,9 +138,9 @@ window.onload = wrap_img;
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tables</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="s">"SELECT name FROM sqlite_schema WHERE type='table'"</span><span class="p">).</span><span class="n">fetchall</span><span class="p">()</span>
 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tables</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># length can be 0 (no table) or &gt;1 (more than one table)
 </span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tables</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">f"The database </span><span class="si">{</span><span class="n">db</span><span class="si">}</span><span class="s"> contains no table."</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s">"The database </span><span class="si">{</span><span class="n">db</span><span class="si">}</span><span class="s"> contains no table."</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">f"The database </span><span class="si">{</span><span class="n">db</span><span class="si">}</span><span class="s"> contains more than one table: </span><span class="si">{</span><span class="p">[</span><span class="n">table</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">]</span><span class="si">}</span><span class="s">."</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s">"The database </span><span class="si">{</span><span class="n">db</span><span class="si">}</span><span class="s"> contains more than one table: </span><span class="si">{</span><span class="p">[</span><span class="n">table</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">]</span><span class="si">}</span><span class="s">."</span><span class="p">)</span>
 <span class="n">table_name</span> <span class="o">=</span> <span class="n">tables</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div></div>
 <p>If we are sure there is only a single table:</p>
@@ -148,7 +150,7 @@ window.onload = wrap_img;
 <p>To iterate over the rows of the table <code class="language-plaintext highlighter-rouge">table_name</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cur</span><span class="p">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="p">.</span><span class="n">Row</span>
 
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cur</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="s">f"SELECT * FROM </span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s">"</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cur</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="sa">f</span><span class="s">"SELECT * FROM </span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s">"</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
 </code></pre></div></div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'date'</span><span class="p">:</span> <span class="s">'2006-01-05'</span><span class="p">,</span> <span class="s">'trans'</span><span class="p">:</span> <span class="s">'BUY'</span><span class="p">,</span> <span class="s">'symbol'</span><span class="p">:</span> <span class="s">'RHAT'</span><span class="p">,</span> <span class="s">'qty'</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span> <span class="s">'price'</span><span class="p">:</span> <span class="mf">35.14</span><span class="p">}</span>
