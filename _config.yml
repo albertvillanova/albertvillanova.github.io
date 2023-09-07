@@ -58,10 +58,10 @@ defaults:
 minima:
   date_format: "%-d %B %Y" #  "%Y-%m-%d"  # "%b %-d, %Y"  # default
   social_links:
-    twitter: avillanovamoral
-    github: albertvillanova
-    linkedin: albertvillanova
-    stackoverflow: "4274763"
+    - { platform: twitter, user_url: "https://twitter.com/avillanovamoral" }
+    - { platform: github, user_url: "https://github.com/albertvillanova" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/albertvillanova/" }
+    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/4274763/albert-villanova-del-moral" }
     # NO: avatar: https://www.gravatar.com/avatar/aebfe2fac5032399a4c8be73b126d5e6
     # facebook: jekyll
     # youtube: jekyll
