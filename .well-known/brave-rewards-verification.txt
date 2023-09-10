@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: albertvillanova.github.io
+Token: e1f0b2dc3a27a4b7dd2a4c107b0612a5ca7d1316b32d0ae06817beb3fc800e15
