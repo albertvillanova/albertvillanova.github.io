@@ -102,6 +102,7 @@ exclude:
 
 # this setting allows you to keep pages organized in the _pages folder
 include:
+  - .well-known
   - _pages
 
 # This specifies what badges are turned on by default for notebook posts.
